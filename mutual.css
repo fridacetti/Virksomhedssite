@@ -1,0 +1,245 @@
+/** Font
+
+Overskrift + menu: Montserrat
+Underoverskrifter: Playfair Display
+p:  Maven Pro **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/** Header **/
+/** Menu desktop **/
+.menu {
+  font-family: montserrat; /** Font **/
+  text-transform: uppercase; /** Caps lock **/
+  display: flex; /** På linje **/
+  justify-content: space-between; /** Lige meget mellemrum **/
+  max-width: 1200px; /** Sætter størrelsen **/
+  margin-inline: auto; /** Auto i midten **/
+  padding-left: 10%; /** Mellemrum venstre **/
+  padding-right: 10%; /** Mellemrum højre **/
+  list-style: none; /** Fjerner prikker **/
+  padding-bottom: 2%; /** Mellemrum i bunden **/
+}
+
+/** Tekst i menu **/
+.menu a {
+  padding: 10px; /** Mellemrum **/
+  text-decoration: none; /** Fjerner underscore **/
+  color: black; /** Tekstfarve sort **/
+}
+
+/** underlinje **/
+.menu a {
+  position: relative;
+  text-decoration: none;
+  color: black; /** Farve **/
+}
+
+/** Underlinje hover **/
+.menu a::after {
+  content: "";
+  position: absolute;
+  left: 0; /** Får linjen under tekst **/
+  bottom: 0; /** Får linjen under tekst **/
+  width: 0; /** Får linjen under tekst **/
+  height: 1px; /** Højden på linjen **/
+  background: #6a6f44; /** Farve **/
+  transition: width 0.3s ease; /** Tiden og typen af animation **/
+}
+
+/** Får underlinje hover til at blive **/
+.menu a:hover::after,
+.menu a.active::after {
+  width: 100%; /** Underlinjen forbliver for aktive links**/
+}
+
+/** Logo 1 **/
+.logo_1 {
+  width: 25%; /** Mindre billede **/
+  display: block; /** Gør det muligt at billedet sidder midt **/
+  margin: auto; /** Centrerer billede **/
+  padding-bottom: 2%; /** Mellemrum i bunden **/
+  padding-top: 2%; /** Mellemrum i toppen **/
+}
+
+/** Logo 2 **/
+.logo_2 {
+  display: none; /** Forsvinder i desktop **/
+}
+
+/** Menu mobil **/
+.burger {
+  width: 30px; /** længde på burger ***/
+  cursor: pointer; /** Gør menuen klikbar **/
+}
+
+.burger .line {
+  height: 2px; /** Størrelse på burger streger **/
+  background-color: #333333; /** Farve **/
+  margin-bottom: 5px; /** Afstand mellem linjer **/
+}
+
+.burger {
+  display: none; /** Fjerner burger i desktop **/
+}
+
+@media (max-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between; /** Menu højre **/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /** Skygge **/
+    margin-inline: auto; /** Auto i midten **/
+  }
+
+  .logo_2 {
+    display: inline; /** Logo_2 synlig i mobil **/
+    width: 50px; /** px gør at billede ikke justeres **/
+    padding-left: 8%; /** Mellemrum venstre **/
+    padding-top: 2%; /** Mellemrum til top **/
+  }
+
+  .logo_1 {
+    display: none; /** Logo_1 forsvinder i mobil **/
+  }
+
+  .menu {
+    display: none; /** Menu vises **/
+    margin-top: -50px; /** Samme afstand til top = px **/
+  }
+
+  .burger {
+    display: block; /** Gør burger-menu synlig **/
+    margin-left: -20%; /** Mellemrum venstre **/
+    margin-top: 60%; /** Mellemrum til top **/
+  }
+
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /** Laver kryds centralt **/
+    transition: 0.2s linear; /** Når kryds = glidende **/
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0; /** Fjerner streg to i burger så det giver kryds **/
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /** Laver kryds centralt **/
+    transition: 0.2s linear; /** Når kryds = glidende **/
+  }
+
+  nav.active .menu {
+    display: block; /** Menu bliver synlig **/
+    position: absolute; /** Menu kommer ned **/
+    background-color: #ffffff; /** Baggrundsfarve **/
+    top: 94px; /** Menu kommer rigtig ned **/
+    left: 0; /** Fylder det hele **/
+    width: 100%; /** Menu fylder hele skærm **/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /** Skygge **/
+  }
+
+  nav.active .menu li {
+    margin: 5px 5px; /** Mellemrum mellem links **/
+  }
+
+  nav.active .menu a {
+    font-size: 15px; /** Skriftstørrelse **/
+  }
+
+  .menu a:hover::after,
+  .menu a.active::after {
+    width: 0%; /** Underlinjen forsvinder **/
+  }
+}
+
+/** Footer desktop **/
+.grid_1-1_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /** 2 kolonner **/
+  padding-right: 10%; /** Mellemrum højre **/
+  padding-left: 10%; /** Mellemrum venstre **/
+  text-align: center; /** Tekst i midten **/
+  padding-bottom: 3%; /** Mellemrum i bunden **/
+}
+
+/** Overskrift i footer **/
+.footer_overskrift {
+  font-family: maven pro; /** Font f**/
+  font-size: 1.2rem; /** Tekststørrelse **/
+  margin-bottom: 1%; /** Mellemrum til bunden **/
+}
+
+/** Tekst i footer **/
+.footer_tekst {
+  font-family: maven pro; /** Font f**/
+  font-size: 1rem; /** Tekststørrelse **/
+}
+
+/** Streg **/
+hr {
+  border: 1px solid rgb(204, 204, 204); /** Farve + stregtykkelse **/
+  margin-bottom: 3%; /** Mellemrum til bunden **/
+}
+
+/** Footer mobil **/
+@media (max-width: 600px) {
+  /** Overskrift i footer **/
+  .footer_overskrift {
+    font-size: 1rem; /** Mindre skrift i mobil **/
+    margin-bottom: 3%; /** Mellemrum til bunden **/
+  }
+
+  /** Tekst i footer **/
+  .footer_tekst {
+    font-size: 0.8rem; /** Mindre skrift i mobil **/
+  }
+}
+
+/** Back to top knap **/
+/** Chat gpt **/
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* Afstand fra bunden */
+  right: 20px; /* Afstand fra højre */
+  width: 70px; /* Øger bredden for en aflang knap */
+  height: 40px; /* Beholder højden */
+  background-color: white; /* Farve på venstre eksempel */
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tilføjer en let skygge */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; /* Skjul knappen som standard */
+  visibility: hidden;
+  transition: all 0.3s ease; /* Tilføjer animation ved visning/skjulning */
+}
+
+#back-to-top:hover {
+  background-color: #6b6b3d; /* Mørkegrøn farve */
+  color: white; /* Hvid pil */
+}
+
+#back-to-top svg {
+  width: 24px;
+  height: 24px;
+  stroke: black; /* Sort pil som standard */
+  transition: stroke 0.3s ease;
+}
+
+#back-to-top:hover svg {
+  stroke: white; /* Hvid pil ved hover */
+}
+
+/* Gør knappen synlig, når der scrolles */
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
