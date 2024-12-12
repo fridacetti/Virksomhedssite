@@ -1,0 +1,16 @@
+@media (min-width: 768px) {
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  #order1 {
+    order: 1;
+  }
+  .grid_1-2 img {
+    order: -1;
+  }
+}
