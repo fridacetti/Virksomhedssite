@@ -243,3 +243,29 @@ hr {
   opacity: 1;
   visibility: visible;
 }
+
+/** LAYOUT **/
+/** OVERSKRIFT **/
+h1 {
+  font-family: montserrat; /** Font **/
+  text-align: center; /** H1 i midten **/
+  margin-bottom: 20px; /** Afstand til bunden **/
+  font-weight: 400; /** Tykkelse på font **/
+}
+
+/** BRØDTEKST **/
+p {
+  max-width: 85ch; /** Begrænser til maks. 85 tegn pr. linje **/
+  margin: auto; /** Tekst i midten auto **/
+  line-height: 1.6; /** Linjehøjde **/
+  margin-bottom: 20px; /** Afstand til bunden **/
+  font-family: maven pro; /** Font **/
+}
+
+/** BODY **/
+body {
+  max-width: 1200px; /** Størrelsen på skærmen **/
+  margin-inline: auto; /** Centrerer alt **/
+  padding-left: 1rem; /** Venstre mellemrum **/
+  padding-right: 1rem; /** Højre mellemrum **/
+}

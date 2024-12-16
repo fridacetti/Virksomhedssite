@@ -1,0 +1,111 @@
+/** LAYOUT **/
+/** OVERSKRIFT **/
+h1 {
+  font-family: montserrat; /** Font **/
+  text-align: center; /** H1 i midten **/
+  margin-bottom: 20px; /** Afstand til bunden **/
+  font-weight: 400; /** Tykkelse på font **/
+}
+
+/** BRØDTEKST **/
+p {
+  max-width: 85ch; /** Begrænser til maks. 85 tegn pr. linje **/
+  margin: auto; /** Tekst i midten auto **/
+  line-height: 1.6; /** Linjehøjde **/
+  margin-bottom: 20px; /** Afstand til bunden **/
+  font-family: maven pro; /** Font **/
+}
+
+/** BODY **/
+body {
+  max-width: 1200px; /** Størrelsen på skærmen **/
+  margin-inline: auto; /** Centrerer alt **/
+  padding-left: 1rem; /** Venstre mellemrum **/
+  padding-right: 1rem; /** Højre mellemrum **/
+}
+
+/** DESKTOP LAYOUT **/
+/** VIDEO **/
+.video {
+  width: 100%; /** Videoen fylder 100% af dens overordnede element **/
+  max-width: 100%; /** Begrænser bredden, hvis den er i et smalt layout **/
+  margin: 0 auto; /** Centrerer video **/
+  margin-top: 10px; /** Afstand til bunden **/
+  margin-bottom: 20px; /** Afstand til toppen **/
+  padding-left: 50px; /** Mellemrum til venstre **/
+  padding-right: 50px; /** Mellemrum til højre **/
+}
+
+.video video {
+  width: 100%; /** Fylder hele videoens bredde **/
+  height: 400px; /** Fast højde **/
+  object-fit: cover; /** Tilpasser videoen, så den beskæres **/
+}
+
+/** GALLERI **/
+.galleri_planteskole {
+  padding-top: 10px; /** Afstand top **/
+  display: grid; /** Grid **/
+  grid-template-columns: 1fr 1fr 1fr; /** Antal kolonner **/
+  gap: 10px; /*** Mellemrum **/
+  padding-left: 50px; /** Venstre **/
+  padding-right: 50px; /** Højre **/
+  padding-bottom: 20px; /** Afstand bund **/
+}
+
+/** BILLEDER I MOBIL **/
+.mobilvisning1,
+.mobilvisning2,
+.mobilvisning3 {
+  display: none; /** Fjerner billederne i desktop **/
+}
+
+/** MOBIL LAYOUT **/
+@media (max-width: 600px) {
+  /** BILLEDER I DEKSTOP **/
+  .desktopvisning {
+    display: none; /** Fjerner billederne i mobil **/
+  }
+
+  /** GALLERI **/
+  .galleri_planteskole {
+    padding-top: 10px; /** Mellemrum top  **/
+    display: grid; /** Grid **/
+    grid-template-columns: 1fr; /** 1 kolonne **/
+    gap: 10px; /** Mellemrum **/
+    padding-left: 20px; /** Luft venstre **/
+    padding-right: 20px; /** Luft højre **/
+    padding-bottom: 20px; /** Mellemrum bunden **/
+  }
+
+  .mobilvisning1 {
+    grid-column: 1 / span 2; /** Fylder hele kolonnen **/
+    display: inline; /** Billedet vises i mobil **/
+  }
+
+  .mobilvisning2 {
+    grid-column: 1 / span 2; /** Fylder hele kolonnen **/
+    display: inline; /** Billedet vises i mobil **/
+  }
+
+  .mobilvisning3 {
+    grid-column: 1 / span 2; /** Fylder hele kolonnen **/
+    display: inline; /** Billedet vises i mobil **/
+  }
+
+  /** VIDEO **/
+  .video {
+    width: 100%; /** Videoen fylder 100% **/
+    max-width: 100%; /** Begrænser bredden, hvis den er i et smalt layout **/
+    margin: 0 auto; /** Centrerer vidoen **/
+    margin-top: 10px; /** Afstand til top **/
+    margin-bottom: 20px; /** Afstand til bund **/
+    padding-left: 0px; /** Fjerner padding i mobil **/
+    padding-right: 0px; /** Fjerner padding i mobil **/
+  }
+
+  .video video {
+    width: 100%; /** Videoen fylder containerens bredde **/
+    height: auto; /** Højden justeres automatisk **/
+  }
+}
