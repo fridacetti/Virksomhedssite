@@ -258,6 +258,11 @@ h1 {
   font-weight: 400; /** Tykkelse på font **/
 }
 
+h2 {
+  font-family: playfair display;
+  text-align: center;
+}
+
 /** BRØDTEKST **/
 p {
   max-width: 85ch; /** Begrænser til maks. 85 tegn pr. linje **/
