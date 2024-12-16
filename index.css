@@ -21,15 +21,14 @@ img {
   font-size: 0.9rem;
   margin-inline: auto;
   display: block;
-}
-
-.find-os-knap {
   text-decoration: none;
   color: black;
   border: solid;
   text-align: center;
-  padding: 2%;
+  padding: 1.5%;
+  width: 20%;
 }
+
 .find-os-knap:hover {
   background-color: var(--hover-color); /* Mørkegrøn farve */
   color: white; /* Hvid pil */
