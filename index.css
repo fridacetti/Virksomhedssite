@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
-  .grid_2-1 {
+  .grid_3-2 {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
   }
-  .grid_1-2 {
+  .grid_2-3 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 2fr 3fr;
   }
   #order1 {
     order: 1;
