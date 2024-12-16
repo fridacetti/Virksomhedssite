@@ -1,3 +1,8 @@
+:root {
+  --text-color: #111111;
+  --hover-color: #6a6f44;
+  --knap-color: #6b6b3d;
+}
 /** Font
 
 Overskrift + menu: Montserrat
@@ -33,7 +38,7 @@ img {
 .menu a {
   padding: 10px; /** Mellemrum **/
   text-decoration: none; /** Fjerner underscore **/
-  color: black; /** Tekstfarve sort **/
+  color: var(--text-color); /** Tekstfarve sort **/
 }
 
 /** underlinje **/
@@ -51,7 +56,7 @@ img {
   bottom: 0; /** Får linjen under tekst **/
   width: 0; /** Får linjen under tekst **/
   height: 1px; /** Højden på linjen **/
-  background: #6a6f44; /** Farve **/
+  background: var(--hover-color); /** Farve **/
   transition: width 0.3s ease; /** Tiden og typen af animation **/
 }
 
@@ -223,7 +228,7 @@ hr {
 }
 
 #back-to-top:hover {
-  background-color: #6b6b3d; /* Mørkegrøn farve */
+  background-color: var(--hover-color); /* Mørkegrøn farve */
   color: white; /* Hvid pil */
 }
 
