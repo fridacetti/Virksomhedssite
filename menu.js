@@ -16,34 +16,6 @@ function menuClick() {
 
 // Menu
 
-document.addEventListener("DOMContentLoaded", function () {
-  const menuLinks = document.querySelectorAll(".menu-link");
-
-  // Marker det aktive link baseret på lokal lagring
-  const activePage = localStorage.getItem("activeLink");
-  if (activePage) {
-    menuLinks.forEach((link) => {
-      if (link.href.includes(activePage)) {
-        link.classList.add("active");
-      }
-    });
-  }
-
-  // Tilføj 'active'-klasse og gem i lokal lagring ved klik
-  menuLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      // Fjern 'active'-klasse fra alle links
-      menuLinks.forEach((l) => l.classList.remove("active"));
-
-      // Tilføj 'active' til det klikkede link
-      this.classList.add("active");
-
-      // Gem det aktive link i lokal lagring
-      localStorage.setItem("activeLink", this.getAttribute("href"));
-    });
-  });
-});
-
 // Back to top knap
 // Hent knappen
 const backToTopButton = document.getElementById("back-to-top");
