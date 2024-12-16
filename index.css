@@ -1,3 +1,57 @@
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-inline: 50px;
+  margin-bottom: 10%;
+}
+
+p {
+  margin: 6%;
+}
+
+img {
+  margin: 5%;
+}
+
+/** find os her knap **/
+.find-os-knap {
+  background-color: white;
+  width: 114px;
+  height: 40px;
+  font-size: 0.9rem;
+  margin-inline: auto;
+  display: block;
+}
+
+.find-os-knap {
+  text-decoration: none;
+  color: black;
+  border: solid;
+  text-align: center;
+  padding: 2%;
+}
+.find-os-knap:hover {
+  background-color: var(--hover-color); /* Mørkegrøn farve */
+  color: white; /* Hvid pil */
+}
+
+#back-to-top svg {
+  width: 24px;
+  height: 24px;
+  stroke: black; /* Sort pil som standard */
+  transition: stroke 0.3s ease;
+}
+
+#back-to-top:hover svg {
+  stroke: white; /* Hvid pil ved hover */
+}
+
+/* Gør knappen synlig, når der scrolles */
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media (min-width: 768px) {
   .grid_3-2 {
     display: grid;
@@ -18,6 +72,17 @@
   }
 
   .left {
-    margin-left: 6%;
+    margin-bottom: 0;
+    margin-left: 10%;
+  }
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: 100px;
+    margin-bottom: 10%;
+  }
+  /** find os her knap **/
+  .find-os-knap {
+    margin-inline: auto 0;
   }
 }

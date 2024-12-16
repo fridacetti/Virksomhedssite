@@ -39,8 +39,10 @@
     </header>
 
     <main>
-
-        <img src="img/hero_img.webp" alt="hero-img">
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+            type="module"></script>
+        <dotlottie-player src="https://lottie.host/5bfd48ac-c8d9-485c-b018-44ae4617529c/hYKGJbx1vb.lottie"
+            background="transparent" speed="1" loop autoplay></dotlottie-player>
         <h1>HAVERO PLANTESKOLE</h1>
         <div class="grid_3-2">
             <p class="right">“Haveros identitet ligger i navnet. Når man går ind af døren på Havero Planteskole, træder
@@ -59,19 +61,35 @@
             <img src="img/forside1.webp" alt="billed">
         </div>
         <div class="grid_2-3">
-            <p id="order1" class="left">Havero Planteskole ligger på Emdrupgade 32, og adressen har en rig historie da
-                der har ligget
-                gartneri her i over 75 år.
-                Vi har de sidste par år været at finde ved bl.a. Tivolis Havefestivaller, “Lad Det Gro” på Tv2, og vores
-                dygtige
-                konsulenter kan også komme ud til Jer og skabe en drømmehave.
-                Vores passion ligger i stauder og vi råder over et stort udvalg herboende arter der gavner
-                biodiversiteten i haven for
-                insekter og andre dyr, så haven både er smuk og holder sig godt i det danske klima.”</p>
+            <div id="order1">
+                <p class="left">Havero Planteskole ligger på Emdrupgade 32, og adressen har en rig historie da
+                    der har ligget
+                    gartneri her i over 75 år.
+                    Vi har de sidste par år været at finde ved bl.a. Tivolis Havefestivaller, “Lad Det Gro” på Tv2, og
+                    vores
+                    dygtige
+                    konsulenter kan også komme ud til Jer og skabe en drømmehave.
+                    Vores passion ligger i stauder og vi råder over et stort udvalg herboende arter der gavner
+                    biodiversiteten i haven for
+                    insekter og andre dyr, så haven både er smuk og holder sig godt i det danske klima.”</p>
+
+                <a class="find-os-knap" href="kontakt.html">FIND OS HER</a>
+
+            </div>
             <img src="img/forside2.webp" alt="billed_2">
         </div>
+
         <h2>Se mere på vores Instagram</h2>
-        <p>Instagram feed</p>
+
+        <div class="grid_1-1-1">
+            <a href="https://www.instagram.com/havero_kbh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                    src="img/insta1.webp" alt=""></a>
+            <a href="https://www.instagram.com/havero_kbh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                    src="img/insta2.webp" alt=""></a>
+            <a href="https://www.instagram.com/havero_kbh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img
+                    src="img/insta3.webp" alt=""></a>
+            </a>
+        </div>
 
         <button id="back-to-top" title="Tilbage til toppen">
             <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
