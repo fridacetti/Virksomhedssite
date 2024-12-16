@@ -13,4 +13,11 @@
   .grid_1-2 img {
     order: -1;
   }
+  .right {
+    margin-right: 6%;
+  }
+
+  .left {
+    margin-left: 6%;
+  }
 }
