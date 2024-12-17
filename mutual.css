@@ -92,6 +92,7 @@ img {
   margin-bottom: 5px; /** Afstand mellem linjer **/
 }
 
+/** Burger menu, hentet fra Karolines 03_UX website **/
 .burger {
   display: none; /** Fjerner burger i desktop **/
 }
