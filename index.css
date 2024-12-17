@@ -24,7 +24,7 @@ img {
   border: solid;
   text-align: center;
   padding: 2.5%;
-  width: 30%;
+  width: 120px;
 }
 
 .find-os-knap:hover {
@@ -53,7 +53,7 @@ img {
 
   .left {
     margin-bottom: 0;
-    /* margin-left: 10%; */
+    margin-bottom: 3%;
   }
   .grid_1-1-1 {
     display: grid;
@@ -65,7 +65,7 @@ img {
   .find-os-knap {
     margin-inline: auto 0;
     padding: 1.5%;
-    width: 20%;
+    width: 120px;
   }
 
   img {
