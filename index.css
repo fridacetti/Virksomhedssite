@@ -13,10 +13,10 @@ img {
   margin-top: 4%;
 }
 /** find os her knap **/
-.find-os-knap {
+.udvalg-knap {
   background-color: white;
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-inline: auto;
   display: block;
   text-decoration: none;
@@ -24,10 +24,10 @@ img {
   border: solid;
   text-align: center;
   padding: 2.5%;
-  width: 120px;
+  width: 150px;
 }
 
-.find-os-knap:hover {
+.udvalg-knap:hover {
   background-color: var(--hover-color); /* Mørkegrøn farve */
   color: white; /* Hvid pil */
 }
@@ -62,10 +62,10 @@ img {
     margin-bottom: 10%;
   }
   /** find os her knap **/
-  .find-os-knap {
+  .udvalg-knap {
     margin-inline: auto 0;
     padding: 1.5%;
-    width: 120px;
+    width: 150px;
   }
 
   img {
