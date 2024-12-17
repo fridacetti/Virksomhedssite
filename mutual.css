@@ -148,6 +148,7 @@ img {
     left: 0; /** Fylder det hele **/
     width: 100%; /** Menu fylder hele skærm **/
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /** Skygge **/
+    z-index: 10; /** Rykker menu frem foran alt**/
   }
 
   nav.active .menu li {
