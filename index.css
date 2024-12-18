@@ -19,12 +19,6 @@ img {
   height: auto; /* Bevarer billedets proportioner */
 }
 
-.grid_1-1-1 img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover; /* Sikrer ensartet størrelse */
-}
-
 /** find os her knap **/
 .udvalg-knap {
   background-color: white;
@@ -43,6 +37,14 @@ img {
 .udvalg-knap:hover {
   background-color: var(--hover-color); /* Mørkegrøn farve */
   color: white; /* Hvid pil */
+}
+
+@media (max-width: 490px) {
+  .grid_1-1-1 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover; /* Sikrer ensartet størrelse */
+  }
 }
 
 @media (min-width: 768px) {
