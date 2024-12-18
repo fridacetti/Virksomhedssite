@@ -79,11 +79,3 @@ img {
     margin: 5%;
   }
 }
-
-@media (max-width: 490px) {
-  .grid_1-1-1 img {
-    /* width: 100px;
-    height: 100px; */
-    object-fit: cover; /* Sikrer ensartet størrelse */
-  }
-}
