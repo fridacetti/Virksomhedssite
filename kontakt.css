@@ -26,14 +26,15 @@
   font-family: montserrat;
 }
 .submit {
-  background-color: #6b6b3d;
+  background-color: #ffffff;
   font-family: maven pro;
   padding: 4px;
   min-height: 24px;
   min-width: 80px;
-  border: none;
   margin: 12px;
+  border-color: #6b6b3d;
 }
 .submit:hover {
   cursor: pointer;
+  background-color: #6b6b3d;
 }
