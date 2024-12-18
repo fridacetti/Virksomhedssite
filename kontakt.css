@@ -37,4 +37,5 @@
 .submit:hover {
   cursor: pointer;
   background-color: #6b6b3d;
+  color: #ffffff;
 }
