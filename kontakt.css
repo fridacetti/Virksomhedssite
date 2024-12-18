@@ -6,6 +6,11 @@
   margin-bottom: 24px;
 }
 
+.grid_container_2 {
+  width: 100%;
+  height: auto; /* Bevarer billedets proportioner */
+}
+
 @media (min-width: 770px) {
   .grid_container_1 {
     flex-direction: row;
