@@ -2,7 +2,7 @@
 .grid_container_2 {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   margin-bottom: 24px;
 }
 
@@ -19,4 +19,21 @@
   .kontakt_img {
     width: 50%;
   }
+}
+.form-felt,
+.placeholder {
+  width: 100px;
+  font-family: montserrat;
+}
+.submit {
+  background-color: #6b6b3d;
+  font-family: maven pro;
+  padding: 4px;
+  min-height: 24px;
+  min-width: 80px;
+  border: none;
+  margin: 12px;
+}
+.submit:hover {
+  cursor: pointer;
 }
