@@ -12,6 +12,19 @@ p {
 img {
   margin-top: 4%;
 }
+
+.grid_3-2 img,
+.grid_2-3 img {
+  width: 100%;
+  height: auto; /* Bevarer billedets proportioner */
+}
+
+.grid_1-1-1 img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover; /* Sikrer ensartet størrelse */
+}
+
 /** find os her knap **/
 .udvalg-knap {
   background-color: white;
